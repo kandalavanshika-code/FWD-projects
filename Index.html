@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>MusicBeats</h2>
+            <nav>
+                <ul>
+                    <li
+                        style="color: var(--text-primary); text-shadow: 0 0 8px rgba(255,255,255,0.5); transform: translateX(5px);">
+                        <a href="Index.html" style="color: inherit;">Home</a>
+                    </li>
+                    <li><a href="library.html">Your Library</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main">
+            <header class="top-bar">
+                <form id="search-form" class="search-form">
+                    <input type="text" id="search-input" placeholder="Search for songs or artists..." required
+                        aria-label="Search songs">
+                    <button type="submit">Search</button>
+                </form>
+            </header>
+
+            <h1>Trending Now</h1>
+
+            <section class="songs" id="songs-container">
+            </section>
+        </main>
+    </div>
+
+    <footer class="player">
+        <div class="now-playing">
+            <img id="current-cover" src="" alt="Album Cover" style="display: none;">
+            <div class="track-info">
+                <span id="current-title">Select a song</span>
+                <small id="current-artist">to start playing</small>
+            </div>
+        </div>
+
+        <div class="controls-container">
+            <div class="controls">
+                <button id="prev-btn" aria-label="Previous">⏮</button>
+                <button id="play-btn" aria-label="Play/Pause">▶</button>
+                <button id="next-btn" aria-label="Next">⏭</button>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" min="0" max="100" value="0" aria-label="Progress">
+                <span id="duration-time">0:00</span>
+            </div>
+        </div>
+
+        <audio id="audio-player"></audio>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
