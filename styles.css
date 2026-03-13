@@ -1,0 +1,162 @@
+
+* {
+    margin: 10;
+    padding: 10;
+}
+
+body {
+    font-family:monospace;
+    background-color:#D1FAF7;
+    
+}
+
+
+
+h1, h2, h3 {
+    font-family:monospace;
+}
+
+
+header {
+    background: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #B5DAF7;
+    border-bottom: 2px solid #B5DAF7;
+    padding-bottom: 3px;
+}
+
+
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.section h2 {
+    font-size: 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero img {
+    width: 400px;
+    border-radius: 30%;
+    border-style:solid;
+    border-width: 20px;
+    border-color: #66b9f51f;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6672F5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+
+}
+
+.btn:hover {
+    background: #66B9F5;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+ 
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #8FCEFA;
+}
+
+form button, form input[type="submit"] {
+    background: #6672F5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover, form input[type="submit"]:hover {
+    background: #66B9F5;
+}
+
+footer {
+    background: white;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
